@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "macaumami", "macaumami\macaumami.csproj", "{4358051E-5002-4066-96CC-400820930EC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58} = {FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{4358051E-5002-4066-96CC-400820930EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4358051E-5002-4066-96CC-400820930EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4358051E-5002-4066-96CC-400820930EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5F6BFF-48EE-4B8D-BC54-7C0B0768EF58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

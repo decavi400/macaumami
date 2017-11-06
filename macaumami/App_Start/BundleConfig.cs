@@ -8,6 +8,11 @@ namespace macaumami
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/myscript/main").Include(
+                      "~/myscripts/main.js",
+                      "~/myscripts/angularjs.directive.js"
+                      ));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 

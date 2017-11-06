@@ -1,0 +1,57 @@
+﻿@section top_script{
+<script src="../../Scripts/ckeditor_4.5.1/ckeditor.js"></script>
+<script src="../../Scripts/ckeditor_4.5.1/ckfinder/ckfinder.js"></script>
+}
+
+@section top_style{
+<style>
+    .input-group-addon {
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    span.input-group-addon {
+        background-color: white !important;
+    }
+
+    .form-control > label {
+        margin: 0 5px;
+    }
+
+    .row {
+        margin: 3px 0;
+    }
+</style>
+}
+
+    <div data-ng-controller="About" data-ng-init="Search(d.queryObj)">
+
+        <div class="fun_btn">
+            <input type="submit" name="btnSAVE" value="儲存" id="btnSAVE" data-ng-click="Save()" class="fun_btn03">
+        </div>
+
+                <div>
+
+                    <div class="input-group">
+                        <label class="input-group-addon"></label>
+                        <input type="text" class="ckeditor" id="txtContent" />
+                    </div>
+                    @*<br />
+                    <div style="float:right;">
+                        <div class="btn btn-success" ng-click="Course.Save()">儲存</div>
+                    </div>*@
+                </div>
+
+    </div>
+
+
+
+@section bot_script{
+<script src="../../MyScripts/homeClass.js"></script>
+    <script>
+
+        CKEDITOR.replace('txtContent', {});
+    </script>
+
+    
+}

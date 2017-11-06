@@ -1,0 +1,39 @@
+﻿@section top_script{
+
+}
+
+@section top_style{
+<style>
+    .input-group-addon {
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    span.input-group-addon {
+        background-color: white !important;
+    }
+
+    .form-control > label {
+        margin: 0 5px;
+    }
+
+    .row {
+        margin: 3px 0;
+    }
+</style>
+}
+
+    <div data-ng-controller="Join" data-ng-init="Search(queryObj)">
+
+        <div class="fun_btn">
+            <input type="submit" name="btnSAVE" value="儲存" id="btnSAVE" data-ng-click="Save()" class="fun_btn03">
+        </div>
+
+    </div>
+
+
+
+@section bot_script{
+<script src="../../MyScripts/homeClass.js"></script>
+    
+}
